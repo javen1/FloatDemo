@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="66dp"
+    android:layout_height="66dp"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_float_parent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_circle_stroke_ffcc37_2dp">
+
+
+        <ImageView
+            android:src="@mipmap/icon_steam"
+            android:id="@+id/iv_float_image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_circle_solid_99_80000000" />
+
+        <ImageView
+            android:id="@+id/iv_close_float"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:paddingStart="4dp"
+            android:paddingBottom="4dp"
+            android:src="@mipmap/icon_close_float" />
+
+        <TextView
+            android:id="@+id/tv_queue_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_queue_index"
+            android:layout_centerHorizontal="true"
+            android:text="is waiting"
+            android:textColor="@color/white"
+            android:textSize="6sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
